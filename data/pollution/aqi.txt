@@ -1,0 +1,112 @@
+AIR QUALITY INDEX (AQI)
+
+The Air Quality Index, commonly called AQI, is used to communicate air pollution conditions in a way that is easier for the public to understand.
+
+AQI converts air-quality measurements into an index or category that helps communicate the general condition of the air.
+
+AQI information can be used to communicate whether air quality is generally good, moderate, poor, very poor, or severe according to the applicable AQI system.
+
+AQI CATEGORIES
+
+AQI categories provide a simple way to describe the level of air pollution.
+
+Depending on the AQI standard being used, categories may range from relatively good air quality to increasingly polluted or severe conditions.
+
+The meaning and numerical range of each category can differ between AQI standards and countries.
+
+AQI values should therefore always be interpreted according to the specific AQI standard and data source being used by the application.
+
+AQI AND POLLUTANTS
+
+AQI is based on measurements of one or more air pollutants.
+
+Common pollutants considered in air-quality assessment include:
+
+- PM2.5
+- PM10
+- Nitrogen dioxide
+- Sulfur dioxide
+- Carbon monoxide
+- Ozone
+
+The pollutant contributing most significantly to the reported AQI can depend on the location, time, measurement conditions, and AQI calculation method.
+
+A high AQI does not necessarily mean that every individual pollutant is at the same level.
+
+AQI VALUES
+
+AQI values provide a simplified representation of air-quality conditions.
+
+A lower AQI generally represents better air-quality conditions within a particular AQI system, while a higher AQI generally represents greater pollution.
+
+The numerical meaning of an AQI value depends on the standard used to calculate it.
+
+For this reason, an AQI value should not be interpreted without knowing the applicable AQI scale or data source.
+
+AQI AND AIR QUALITY
+
+AQI provides a convenient way to communicate air-quality conditions, but it is different from directly reporting the concentration of an individual pollutant.
+
+For example, PM2.5 concentration and AQI are not the same measurement.
+
+Pollutant concentration represents the measured amount of a particular pollutant, while AQI communicates air-quality conditions using an index.
+
+AQI can therefore make technical air-quality information easier for general users to understand.
+
+AQI CHANGES OVER TIME
+
+AQI can change throughout the day as pollutant concentrations change.
+
+Traffic activity, industrial activity, construction, weather conditions, wind, rainfall, sunlight, and other factors can influence air-quality measurements.
+
+AQI can therefore be different at different times even within the same location.
+
+AQI can also vary between different locations in the same city.
+
+AQI AND LOCATION
+
+AQI measurements represent air-quality conditions associated with a particular monitoring location and time.
+
+An AQI value from one monitoring station may not accurately represent conditions throughout an entire city.
+
+Different areas can have different AQI values because of differences in traffic, local pollution sources, weather, land use, and other environmental conditions.
+
+AQI DATA SOURCES
+
+AQI information can come from air-quality monitoring stations, sensors, environmental monitoring systems, or other data sources.
+
+The reliability and interpretation of AQI information depend on the quality, location, time, and source of the underlying measurements.
+
+The application should identify or maintain information about the source of AQI data when presenting air-quality information to users.
+
+AQI IN SMART CITY APPLICATIONS
+
+The Smart City application can use air-quality measurements and AQI information to provide understandable pollution-related information.
+
+AQI can help users quickly understand the general air-quality condition of a location without requiring them to interpret several individual pollutant measurements.
+
+The application can combine AQI information with pollutant measurements, location, time, and general environmental information to provide clearer context.
+
+AQI information can also support urban monitoring by helping identify areas or periods with changing air-quality conditions.
+
+INTERPRETING AQI
+
+AQI should be interpreted according to the specific AQI standard being used.
+
+Different countries and organizations may use different AQI calculation methods, pollutant breakpoints, category names, and numerical ranges.
+
+Therefore, the same numerical AQI value should not automatically be assumed to have exactly the same meaning under every AQI system.
+
+The application should use the appropriate interpretation for the AQI standard and data source associated with its measurements.
+
+GENERAL AQI KNOWLEDGE
+
+AQI is a communication tool for describing air-quality conditions.
+
+It does not represent only one pollutant unless the particular AQI calculation identifies that pollutant as the dominant or relevant contributor.
+
+AQI can change because pollutant concentrations and environmental conditions change.
+
+A single AQI value represents conditions for a particular location and measurement period and should not automatically be treated as the air quality of an entire city.
+
+AQI information is most useful when considered together with the measurement location, measurement time, applicable AQI standard, and underlying pollutant data.

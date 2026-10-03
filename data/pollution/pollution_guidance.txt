@@ -1,0 +1,80 @@
+GENERAL AIR POLLUTION GUIDANCE
+
+When air pollution levels are high, people can reduce exposure by following applicable local health guidance.
+
+Air-quality conditions can change throughout the day and can vary between locations. General pollution guidance should therefore be considered together with current air-quality information when available.
+
+GENERAL CONSIDERATIONS
+
+General considerations during periods of higher air pollution include:
+
+- Reduce prolonged outdoor exposure when pollution is high.
+- Follow official local health recommendations.
+- Pay particular attention to guidance intended for people who are sensitive to air pollution.
+- Monitor current air-quality information when available.
+- Consider reducing unnecessary time spent in areas with visibly high pollution or heavy emissions.
+- Keep track of changes in local air-quality conditions when planning outdoor activities.
+
+The appropriate response to air pollution can depend on the current pollution level, local conditions, official guidance, and individual circumstances.
+
+SENSITIVE GROUPS
+
+Some people may be more sensitive to air pollution than others.
+
+People who are sensitive to air pollution should pay particular attention to applicable local health recommendations when air-quality conditions are poor.
+
+The application should avoid making assumptions about an individual's health condition and should direct users toward appropriate official guidance when specific health advice is required.
+
+OUTDOOR ACTIVITIES
+
+When pollution levels are high, reducing prolonged outdoor exposure can help reduce contact with polluted air.
+
+Outdoor activities can be planned according to current air-quality information when such information is available.
+
+Pollution conditions may vary by location, so current information for the relevant area is more useful than relying only on a general city-wide assumption.
+
+AIR-QUALITY MONITORING
+
+Monitoring current air-quality information can help users understand changing pollution conditions.
+
+AQI and pollutant measurements can provide information about the current or recently measured air-quality condition.
+
+Users should consider the measurement location and time because air-quality conditions can change.
+
+STATIC KNOWLEDGE AND REAL-TIME DATA
+
+General pollution guidance can be stored in the application's static knowledge base and retrieved through the knowledge system.
+
+Real-time air-quality measurements should come from a current data source rather than from the static knowledge base.
+
+The static knowledge base can explain concepts such as air pollution, AQI, pollutants, and general exposure-reduction considerations.
+
+A real-time data source is required to provide current information such as the latest AQI, current PM2.5 level, current PM10 level, or current pollutant measurements.
+
+The application should clearly distinguish between general guidance and real-time measurements.
+
+PRESENTING POLLUTION INFORMATION
+
+The Smart City application should present pollution information clearly and in a way that is understandable to users.
+
+When current measurements are available, the application should identify that the information comes from a current data source.
+
+General guidance should not be presented as if it were a live pollution measurement.
+
+Similarly, a previous measurement should not automatically be described as the current air-quality condition.
+
+USING OFFICIAL INFORMATION
+
+When specific health recommendations are required, users should follow applicable official local health guidance.
+
+The application can provide general informational guidance but should not replace official health recommendations or professional medical advice.
+
+GENERAL POLLUTION GUIDANCE
+
+Air pollution can vary depending on location, time, emissions, weather, and atmospheric conditions.
+
+There is no single action that applies to every pollution situation. Appropriate precautions depend on the current air-quality condition and applicable local guidance.
+
+Reducing unnecessary prolonged exposure during periods of high pollution and staying informed about current air-quality conditions are general considerations.
+
+The Smart City application should use static knowledge for general explanations and current data sources for real-time pollution information.

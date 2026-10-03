@@ -1,0 +1,89 @@
+AIR POLLUTION AND WEATHER
+
+Weather and atmospheric conditions can influence the concentration, movement, and distribution of air pollutants.
+
+The same pollution source can produce different measured air-quality conditions at different times because weather conditions can change how pollutants disperse or accumulate.
+
+WIND AND AIR POLLUTION
+
+Wind can transport pollutants away from their original source.
+
+Strong winds can help disperse some pollutants, while wind direction can move pollution from one area toward another.
+
+Wind can also carry dust and other particles from surrounding areas.
+
+Therefore, pollution measured at one location may sometimes be influenced by sources located elsewhere.
+
+RAIN AND AIR POLLUTION
+
+Rain can remove some particles and pollutants from the atmosphere.
+
+Rainfall can temporarily change measured air-quality conditions by reducing the amount of some airborne particles.
+
+However, the effect of rainfall on air quality can vary depending on the pollutant, intensity of rainfall, duration, and other environmental conditions.
+
+Air quality can change again after rainfall if pollution sources continue to release pollutants.
+
+TEMPERATURE
+
+Temperature can influence atmospheric conditions and the behaviour of pollutants.
+
+Changes in temperature can affect the movement and dispersion of air pollutants.
+
+Temperature can also influence chemical reactions in the atmosphere and therefore affect the formation of some pollutants.
+
+SUNLIGHT
+
+Sunlight can influence chemical reactions in the atmosphere.
+
+Some pollutants, including ground-level ozone, can form through chemical reactions involving other pollutants in the presence of sunlight.
+
+As a result, ozone levels can vary depending on sunlight, atmospheric conditions, and the availability of other pollutants.
+
+ATMOSPHERIC CONDITIONS
+
+Atmospheric conditions influence how easily pollutants are dispersed.
+
+When pollutants are not dispersed effectively, their concentrations can increase in a particular area.
+
+Different atmospheric conditions can therefore contribute to changes in air quality even when emission sources remain similar.
+
+POLLUTION DURING DIFFERENT TIMES OF DAY
+
+Air quality can change throughout the day.
+
+Traffic activity, industrial activity, temperature, sunlight, wind, and other conditions can all influence pollution levels.
+
+Morning and evening conditions may differ because traffic patterns and atmospheric conditions can change.
+
+There is no single time of day when pollution is always highest in every location. Local conditions and pollution sources determine the actual pattern.
+
+SEASONAL CHANGES
+
+Air-quality conditions can also vary between seasons.
+
+Seasonal changes in weather, wind, temperature, rainfall, human activities, and other factors can affect pollution levels.
+
+The dominant pollution sources can also change between seasons.
+
+WEATHER AND AQI
+
+Weather conditions can influence the pollutant measurements used to calculate or report AQI.
+
+As pollutant concentrations change, the reported AQI can also change.
+
+AQI should therefore be considered together with the location and time of measurement.
+
+LOCAL DIFFERENCES
+
+Weather conditions can contribute to differences in air quality between locations.
+
+Two areas in the same city can have different pollution levels because of differences in wind, traffic, local emissions, land use, and surrounding conditions.
+
+GENERAL KNOWLEDGE
+
+Weather does not create all air pollution, but it can strongly influence how pollutants move, disperse, accumulate, or react in the atmosphere.
+
+Current weather conditions should not be used alone to determine the current AQI. Actual air-quality measurements are required for current pollution information.
+
+The Smart City application should use current air-quality data for real-time pollution conditions and can use general knowledge about weather to explain possible changes in pollution.

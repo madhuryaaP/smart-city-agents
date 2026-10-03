@@ -1,0 +1,108 @@
+AIR POLLUTION AND AQI
+
+The Air Quality Index (AQI) is used to communicate the level of air pollution in a way that is easier for the public to understand.
+
+AQI provides a simplified indication of air-quality conditions based on measured air pollutants and the applicable AQI calculation system.
+
+AQI categories can be used to describe air quality from relatively clean conditions to increasingly polluted conditions.
+
+The exact numerical ranges and category definitions can vary depending on the AQI standard and data source being used.
+
+GOOD AQI
+
+Good air quality indicates that air pollution is generally at a low level according to the applicable AQI system.
+
+Air quality is considered satisfactory and air pollution poses little or no risk under this category.
+
+Normal outdoor activities can generally continue while following any applicable local guidance.
+
+MODERATE AQI
+
+Moderate air quality indicates that pollution levels are higher than the good category but remain within the moderate range of the applicable AQI system.
+
+Air quality may be acceptable, but unusually sensitive people may experience some effects.
+
+People who are sensitive to air pollution should pay attention to current air-quality information and applicable local guidance.
+
+POOR AIR QUALITY
+
+Poor air quality indicates a higher level of air pollution.
+
+People who are sensitive to air pollution may experience health effects and should consider reducing prolonged outdoor exposure.
+
+Current AQI information and applicable local health recommendations should be considered when deciding about prolonged outdoor activities.
+
+VERY POOR AIR QUALITY
+
+Very poor air quality indicates a further increase in pollution levels.
+
+Health effects may become more noticeable, and people should consider limiting prolonged outdoor activities.
+
+People who are sensitive to air pollution should pay particular attention to applicable local health guidance.
+
+SEVERE AIR POLLUTION
+
+Severe air pollution indicates a high level of pollution according to the applicable AQI system.
+
+Air pollution can pose a significant health risk.
+
+People should follow local health guidance and reduce exposure to polluted outdoor air.
+
+Current air-quality information should be monitored when available.
+
+AQI AND POLLUTANTS
+
+AQI is related to measurements of air pollutants such as:
+
+- PM2.5
+- PM10
+- Nitrogen dioxide
+- Sulfur dioxide
+- Carbon monoxide
+- Ozone
+
+AQI is an index and should not be confused with the concentration of an individual pollutant.
+
+For example, a PM2.5 measurement represents the concentration of particulate matter, while AQI communicates air-quality conditions using an index.
+
+The pollutant contributing most significantly to an AQI value can depend on the location, time, measurements, and AQI calculation method.
+
+AQI CHANGES
+
+AQI can change throughout the day because pollutant concentrations can change.
+
+Traffic, industrial activity, construction, weather, wind, rainfall, sunlight, and other environmental conditions can influence air quality.
+
+AQI can also differ between different locations in the same city.
+
+Therefore, an AQI value from one location and time should not automatically be assumed to represent the current condition of an entire city.
+
+USING AQI INFORMATION
+
+AQI information can help users understand air-quality conditions without requiring them to interpret multiple pollutant measurements individually.
+
+The Smart City application can use AQI information to provide users with understandable pollution-related recommendations.
+
+When presenting AQI information, the application should consider the location, time of measurement, AQI standard, and data source.
+
+STATIC INFORMATION AND REAL-TIME AQI
+
+Static knowledge can explain what AQI categories mean and provide general information about air pollution.
+
+Real-time AQI values should come from a current air-quality data source rather than being generated from the static knowledge base.
+
+The application should distinguish between general explanations of AQI categories and current measured AQI values.
+
+A static knowledge file cannot determine the current AQI of a location unless current measurements are provided by a live data source.
+
+GENERAL AQI KNOWLEDGE
+
+A higher AQI generally indicates greater air pollution within the applicable AQI system.
+
+A lower AQI generally indicates better air-quality conditions.
+
+AQI categories provide a simplified way of communicating pollution conditions, but the exact interpretation depends on the AQI standard being used.
+
+AQI information should be considered together with the measurement location, measurement time, underlying pollutant data, and applicable local guidance.
+
+The Smart City application can combine current AQI measurements with the knowledge base to explain what the reported air-quality condition means in simple language.

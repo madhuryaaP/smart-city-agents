@@ -1,0 +1,122 @@
+SOURCES OF AIR POLLUTION
+
+Air pollution can come from different sources. Some sources are related to human activities, while others occur naturally.
+
+The contribution of different sources can vary by location, season, weather, traffic conditions, industrial activity, and other local factors.
+
+COMMON SOURCES OF AIR POLLUTION
+
+Common sources include:
+
+- Vehicle emissions
+- Industrial activities
+- Construction and road dust
+- Burning of waste or other materials
+- Power generation
+- Natural sources such as dust and some environmental events
+
+VEHICLE EMISSIONS
+
+Vehicles can release pollutants into the atmosphere through fuel combustion.
+
+Cars, buses, trucks, motorcycles, and other vehicles can contribute to urban air pollution, particularly in areas with heavy traffic.
+
+Traffic-related pollution can vary depending on the number of vehicles, type of vehicles, fuel used, traffic congestion, and local conditions.
+
+Areas with heavy or slow-moving traffic may experience different pollution conditions from areas with lighter traffic.
+
+INDUSTRIAL ACTIVITIES
+
+Industrial activities can release different pollutants depending on the processes, fuels, materials, and equipment involved.
+
+Factories and other industrial facilities may contribute to particulate matter and gaseous pollutants.
+
+The type and amount of pollution produced can vary significantly between different industries.
+
+Industrial pollution can be influenced by operating conditions, emission-control systems, fuel use, and local weather conditions.
+
+CONSTRUCTION AND ROAD DUST
+
+Construction activities can generate dust and particulate matter.
+
+Activities such as excavation, demolition, movement of construction materials, and operation of construction equipment can contribute to airborne particles.
+
+Road dust can also become airborne because of vehicle movement, dry surfaces, construction activity, and other disturbances.
+
+Dust-related pollution can vary depending on road conditions, construction activity, weather, and traffic.
+
+WASTE BURNING
+
+Burning waste or other materials can release smoke and pollutants into the atmosphere.
+
+The type and amount of pollutants released can depend on the material being burned and the conditions under which it is burned.
+
+Open burning can contribute to local air pollution and can affect surrounding areas depending on wind and atmospheric conditions.
+
+POWER GENERATION
+
+Power generation can contribute to air pollution when fuels are burned to produce energy.
+
+The pollutants released depend on the type of fuel, generation process, equipment, and emission-control measures.
+
+Different power-generation methods have different environmental characteristics and emission profiles.
+
+NATURAL SOURCES
+
+Air pollution can also come from natural sources.
+
+Natural sources can include dust, wildfires, biological particles, and certain environmental events.
+
+Natural pollution sources can vary depending on weather, season, geographic conditions, and environmental events.
+
+Not all changes in air quality are necessarily caused by human activity.
+
+WEATHER AND POLLUTION SOURCES
+
+Weather conditions can affect how pollutants move and disperse after they are released.
+
+Wind can transport pollutants away from their source or bring pollutants from another area.
+
+Rain can remove some particles from the atmosphere and can temporarily change measured air-quality conditions.
+
+Temperature and atmospheric conditions can also affect the concentration and distribution of pollutants.
+
+Because of these factors, pollution from the same source can result in different measured air-quality conditions at different times.
+
+LOCAL VARIATION
+
+The contribution of different pollution sources can vary from one location to another.
+
+For example, a busy traffic corridor may be more influenced by vehicle emissions, while an area near industrial activity may be influenced by industrial sources.
+
+Construction activity can temporarily increase dust levels around a particular location.
+
+The overall air quality of an area can therefore be influenced by several sources at the same time.
+
+POLLUTION SOURCES AND AQI
+
+Different pollution sources can contribute to different pollutants.
+
+For example, vehicle and combustion activities can contribute to gases and particulate matter, while construction and road activity can contribute significantly to dust and particulate matter.
+
+The AQI represents air-quality conditions using measurements of relevant pollutants. The pollutant contributing most significantly to the reported AQI can vary by location and time.
+
+AIR-QUALITY MONITORING
+
+Air-quality monitoring data can help identify changes in pollutant concentrations.
+
+Monitoring stations and sensors can measure pollutants such as PM2.5, PM10, nitrogen dioxide, sulfur dioxide, carbon monoxide, and ozone.
+
+Monitoring data can show how air-quality conditions change over time and between locations.
+
+However, measured pollution levels alone do not always identify the exact source of a pollutant. Additional information, source analysis, or environmental assessment may be required to determine the contribution of specific sources.
+
+GENERAL KNOWLEDGE
+
+Air pollution is usually the result of multiple sources rather than a single source.
+
+The importance of each source can change depending on location, season, weather, traffic, industrial activity, construction, and other local conditions.
+
+Understanding pollution sources can help cities identify pollution patterns and support air-quality monitoring and environmental planning.
+
+The Smart City application can combine air-quality monitoring information with general knowledge about pollution sources to help users understand possible reasons for changes in air quality.

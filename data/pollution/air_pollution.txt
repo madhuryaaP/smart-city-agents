@@ -1,0 +1,140 @@
+AIR POLLUTION
+
+Air pollution occurs when harmful substances or pollutants are present in the air at concentrations that can affect people, animals, ecosystems, or the environment.
+
+Air pollution can come from natural sources as well as human activities. In urban areas, common sources include vehicles, industries, construction activities, waste burning, fuel combustion, and other activities that release pollutants into the atmosphere.
+
+COMMON AIR POLLUTANTS
+
+Common air pollutants include:
+
+- Particulate matter such as PM2.5 and PM10
+- Nitrogen dioxide (NO2)
+- Sulfur dioxide (SO2)
+- Carbon monoxide (CO)
+- Ozone (O3)
+
+Different pollutants can come from different sources and can behave differently in the atmosphere.
+
+PARTICULATE MATTER
+
+Particulate matter refers to very small solid particles or liquid droplets suspended in the air.
+
+PM10 refers to particles with a diameter of 10 micrometers or smaller.
+
+PM2.5 refers to finer particles with a diameter of 2.5 micrometers or smaller.
+
+Particulate matter can come from vehicle emissions, construction and road dust, industrial activities, combustion, and other sources.
+
+Because PM2.5 particles are very small, they can remain suspended in the air and can be an important pollutant when monitoring urban air quality.
+
+NITROGEN DIOXIDE
+
+Nitrogen dioxide is an air pollutant commonly associated with combustion processes.
+
+Road traffic and fuel-burning activities can contribute to nitrogen dioxide levels in urban areas.
+
+Higher concentrations of nitrogen dioxide can indicate increased pollution from combustion-related sources.
+
+SULFUR DIOXIDE
+
+Sulfur dioxide is an air pollutant that can be released when fuels containing sulfur are burned.
+
+Industrial activities and certain combustion processes can contribute to sulfur dioxide emissions.
+
+Monitoring sulfur dioxide can provide information about pollution from relevant industrial and combustion sources.
+
+CARBON MONOXIDE
+
+Carbon monoxide is a gas produced primarily through incomplete combustion of fuels.
+
+Vehicle emissions and other combustion activities can contribute to carbon monoxide levels.
+
+Carbon monoxide is one of the pollutants that can be monitored as part of air-quality assessment.
+
+OZONE
+
+Ground-level ozone is an air pollutant that can form in the atmosphere through chemical reactions involving other pollutants.
+
+Unlike some pollutants that are emitted directly from a source, ground-level ozone can form through atmospheric reactions.
+
+Ozone concentrations can vary depending on atmospheric conditions, sunlight, and the presence of other pollutants.
+
+SOURCES OF AIR POLLUTION
+
+Common sources of urban air pollution include:
+
+- Vehicle emissions
+- Industrial activities
+- Construction activities
+- Road and dust emissions
+- Waste burning
+- Fuel combustion
+- Power generation
+- Other human activities that release pollutants
+
+The contribution of different sources can vary between locations and over time.
+
+AIR QUALITY MONITORING
+
+Air-quality monitoring systems measure concentrations of pollutants in the atmosphere.
+
+Monitoring stations and sensors can collect information about pollutants such as particulate matter and gases.
+
+Air-quality measurements can change throughout the day depending on emissions, weather conditions, traffic, and other environmental factors.
+
+Monitoring data can therefore provide information about changing air conditions in a particular area.
+
+AIR QUALITY AND WEATHER
+
+Weather and atmospheric conditions can influence the concentration and distribution of air pollutants.
+
+Wind can transport pollutants away from an area or bring pollutants from another location.
+
+Rain can remove some particles from the atmosphere and temporarily affect measured air-quality conditions.
+
+Temperature, sunlight, and atmospheric conditions can also influence the formation and movement of certain pollutants.
+
+Because of these factors, air-quality conditions can change even when the amount of pollution being produced remains similar.
+
+AIR POLLUTION IN URBAN AREAS
+
+Urban areas can experience air pollution from multiple sources at the same time.
+
+Traffic, construction, industries, road dust, and other activities can contribute to the overall pollution level.
+
+Pollution levels may vary between locations depending on traffic volume, nearby activities, weather conditions, and other local factors.
+
+An area with heavy traffic may have different pollution conditions from a less busy residential or green area.
+
+AIR POLLUTION AND THE ENVIRONMENT
+
+Air pollution can affect ecosystems, vegetation, animals, water bodies, soil, and the wider environment.
+
+Different pollutants can have different environmental effects.
+
+The environmental impact depends on the type of pollutant, its concentration, duration of exposure, and environmental conditions.
+
+AIR-QUALITY INFORMATION
+
+Air-quality monitoring data can help identify changes in pollution levels and provide information about current conditions.
+
+The application can combine air-quality measurements with general guidance to provide understandable information to users.
+
+Measured air-quality data should be interpreted according to the relevant monitoring system, pollutant, location, and time of measurement.
+
+A single measurement represents conditions at a particular location and time and may not represent the air quality of an entire city.
+
+GENERAL AIR POLLUTION KNOWLEDGE
+
+Air pollution is not caused by one pollutant or one source. Different pollutants can come from different sources and can change independently.
+
+Air-quality conditions can vary between locations and throughout the day.
+
+Higher pollution levels can occur when emissions increase or when atmospheric conditions limit the dispersion of pollutants.
+
+Monitoring multiple pollutants provides a more complete picture of air-quality conditions than looking at only one pollutant.
+
+Air-quality monitoring systems can help cities understand pollution patterns and support environmental monitoring and urban planning.
+
+The application can use available air-quality information to explain pollution conditions in a simple and understandable way.
