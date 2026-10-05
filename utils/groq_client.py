@@ -203,7 +203,7 @@ Format:
 
         response = client.chat.completions.create(
 
-            model="openai/gpt-oss-20b",
+            model="qwen/qwen3.8-27b",
 
             messages=[
 
@@ -269,7 +269,7 @@ Format:
             time.sleep(2)
 
             response2 = client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
+                model="openai/gpt-oss-20b",
                 messages=[
                     {
                         "role": "system",
@@ -680,7 +680,7 @@ Do not create information that is not present.
 
         response = client.chat.completions.create(
 
-            model="openai/gpt-oss-20b",
+            model="qwen/qwen3.8-27b",
 
             messages=[
 
@@ -733,7 +733,7 @@ Do not create information that is not present.
             time.sleep(2)
 
             response2 = client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
+                model="openai/gpt-oss-20b",
                 messages=[
                     {
                         "role": "system",
@@ -781,7 +781,7 @@ def get_groq_response(
 
         response = client.chat.completions.create(
 
-            model="openai/gpt-oss-20b",
+            model="qwen/qwen3.8-27b",
 
             messages=[
                 {
