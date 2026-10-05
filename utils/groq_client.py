@@ -462,15 +462,91 @@ a DETAILED travel plan / day plan.
 Include:
 
 • A table or schedule with timings
-• Travel mode suggestions (bus, auto, cab, metro)
-  based on distance and traffic:
-  - Under 3 km: auto/walk
-  - 3-10 km: bus/auto/metro
-  - Over 10 km: cab/metro/bus
+• SPECIFIC transport options with details:
+  - Bus: mention TSRTC bus route numbers
+  - Metro: mention nearest metro station names
+  - Auto/Cab: estimated fare range
 • Distance and estimated travel time for each leg
 • Departure time recommendations
 • Weather-based suggestions (carry umbrella, etc.)
 • Traffic-based suggestions (leave early, etc.)
+
+================================================
+HYDERABAD TRANSIT REFERENCE
+================================================
+
+Use this data to suggest specific transit options.
+
+METRO STATIONS (Hyderabad Metro Rail):
+
+Red Line: Miyapur → LB Nagar
+Key stations: Miyapur, JNTU, KPHB, Kukatpally,
+Balanagar, Moosapet, Bharat Nagar, Erragadda,
+ESI, SR Nagar, Ameerpet, Punjab, Irrum Manzil,
+Khairatabad, Lakdi Ka Pul, Assembly, Nampally,
+Gandhi Bhavan, Osmania, MG Bus Station,
+Malakpet, New Market, Musarambagh,
+Dilsukhnagar, Chaitanyapuri, Victoria Memorial,
+LB Nagar
+
+Blue Line: Nagole → Raidurg
+Key stations: Nagole, Uppal, Survey of India,
+Tarnaka, Mettuguda, Secunderabad East,
+Parade Ground, Paradise, Rasoolpura,
+Begumpet, Madhura Nagar, Yousufguda,
+Jubilee Hills Road No 5, Jubilee Hills
+Check Post, Peddamma Temple, Madhapur,
+Durgam Cheruvu, HITEC City, Raidurg
+
+Green Line: JBS → MGBS
+Key stations: JBS, Parade Ground,
+Secunderabad West, Gandhi Hospital,
+Musheerabad, RTC Cross Roads, Chikkadpally,
+Narayanguda, Sultan Bazaar, MG Bus Station
+
+COMMON BUS ROUTES (TSRTC):
+
+LB Nagar area:
+• 65, 65A, 65K: LB Nagar → Koti/MGBS
+• 65G: LB Nagar → Secunderabad
+• 113: LB Nagar → Dilsukhnagar → Kothapet
+• 216: LB Nagar → Mehdipatnam
+• 290: LB Nagar → Miyapur
+• 300: LB Nagar → ECIL
+
+Kothapet area:
+• 113: Kothapet → Dilsukhnagar → LB Nagar
+• 65, 65A: Kothapet → Chaderghat → Koti
+• 107: Kothapet → Secunderabad
+
+HITEC City / Gachibowli / Madhapur:
+• 127: Mehdipatnam → HITEC City
+• 216: LB Nagar → Mehdipatnam → Gachibowli
+• 195: Secunderabad → HITEC City
+• 10H: Secunderabad → HITEC City
+
+Kukatpally / KPHB:
+• 127K: Kukatpally → Mehdipatnam
+• 216: LB Nagar → Kukatpally
+• 229: JNTU → Secunderabad
+
+Secunderabad / Ameerpet:
+• 5, 5K: Secunderabad → Ameerpet → Mehdipatnam
+• 49: Secunderabad → Dilsukhnagar
+
+General:
+• 9, 9K: Secunderabad → Charminar
+• 47: Koti → Kukatpally
+
+AUTO / CAB FARES (approximate):
+• Auto: ₹25 base + ₹12/km
+• Ola/Uber Mini: ₹8-10/km
+• Ola/Uber Sedan: ₹12-14/km
+
+Always suggest the CLOSEST metro station to
+source and destination. Mention 2-3 bus options
+when available. Include auto/cab fare estimates
+based on distance from traffic data.
 
 Format the plan as a clear step-by-step
 itinerary that is easy to follow.
