@@ -226,8 +226,14 @@ Format:
             response.choices[0]
             .message
             .content
-            .strip()
         )
+
+        if not content or not content.strip():
+            raise ValueError(
+                "Empty response from router model"
+            )
+
+        content = content.strip()
 
         # Remove markdown code fences
         if content.startswith("```"):
@@ -253,9 +259,54 @@ Format:
     except Exception as e:
 
         print(
-            "[Groq Parser Error]:",
+            "[Groq Parser Error - attempt 1]:",
             str(e)
         )
+
+        # Retry with reliable non-reasoning model
+        try:
+            import time
+            time.sleep(2)
+
+            response2 = client.chat.completions.create(
+                model="llama-3.3-70b-versatile",
+                messages=[
+                    {
+                        "role": "system",
+                        "content": system_prompt
+                    },
+                    {
+                        "role": "user",
+                        "content": user_content
+                    }
+                ],
+                temperature=0.0
+            )
+
+            content2 = (
+                response2.choices[0]
+                .message
+                .content
+            )
+
+            if content2 and content2.strip():
+                content2 = content2.strip()
+                if content2.startswith("```"):
+                    content2 = re.sub(
+                        r"^```(?:json)?\s*",
+                        "", content2
+                    )
+                    content2 = re.sub(
+                        r"\s*```$",
+                        "", content2
+                    )
+                return json.loads(content2)
+
+        except Exception as e2:
+            print(
+                "[Groq Parser Error - attempt 2]:",
+                str(e2)
+            )
 
         # Safe fallback
         return {
@@ -652,17 +703,64 @@ Do not create information that is not present.
             response.choices[0]
             .message
             .content
-            .strip()
         )
 
-        return answer
+        if not answer or not answer.strip():
+            reasoning = getattr(
+                response.choices[0].message,
+                'reasoning',
+                None
+            )
+            if reasoning:
+                answer = reasoning.strip()
+            else:
+                raise ValueError(
+                    "Empty response from model"
+                )
+
+        return answer.strip()
 
     except Exception as e:
 
         print(
-            "[Groq Response Error]:",
+            "[Groq Response Error - attempt 1]:",
             str(e)
         )
+
+        # Retry with a reliable non-reasoning model
+        try:
+            import time
+            time.sleep(2)
+
+            response2 = client.chat.completions.create(
+                model="llama-3.3-70b-versatile",
+                messages=[
+                    {
+                        "role": "system",
+                        "content": system_prompt
+                    },
+                    {
+                        "role": "user",
+                        "content": user_content
+                    }
+                ],
+                temperature=0.2
+            )
+
+            fallback = (
+                response2.choices[0]
+                .message
+                .content
+            )
+
+            if fallback and fallback.strip():
+                return fallback.strip()
+
+        except Exception as e2:
+            print(
+                "[Groq Response Error - attempt 2]:",
+                str(e2)
+            )
 
         return (
             "📌 **Smart City Assistant**\n\n"

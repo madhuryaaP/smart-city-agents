@@ -330,6 +330,12 @@ class TrafficAgent:
             # OLD CITY
             # ----------------------------------------------------
 
+            "old city":
+                "Charminar Hyderabad",
+
+            "old city hyderabad":
+                "Charminar Hyderabad",
+
             "charminar":
                 "Charminar Hyderabad",
 
@@ -409,6 +415,12 @@ class TrafficAgent:
             dict.fromkeys(candidates)
         )
 
+        # Hyderabad bounding box for validation
+        HYD_LAT_MIN = 17.15
+        HYD_LAT_MAX = 17.65
+        HYD_LON_MIN = 78.20
+        HYD_LON_MAX = 78.75
+
         for candidate in candidates:
 
             try:
@@ -423,7 +435,7 @@ class TrafficAgent:
                     params={
                         "key": self.tomtom_api_key,
                         "countrySet": "IN",
-                        "limit": 1
+                        "limit": 5
                     },
                     timeout=20
                 )
@@ -435,31 +447,45 @@ class TrafficAgent:
                 if not data.get("results"):
                     continue
 
-                result = data["results"][0]
+                # Pick the first result inside
+                # Hyderabad bounding box
+                for result in data["results"]:
 
-                position = result.get(
-                    "position"
+                    position = result.get(
+                        "position"
+                    )
+
+                    if not position:
+                        continue
+
+                    lat = position["lat"]
+                    lon = position["lon"]
+
+                    if (
+                        HYD_LAT_MIN <= lat <= HYD_LAT_MAX
+                        and
+                        HYD_LON_MIN <= lon <= HYD_LON_MAX
+                    ):
+                        return {
+                            "latitude": lat,
+                            "longitude": lon,
+                            "display_name":
+                                result.get(
+                                    "address",
+                                    {}
+                                ).get(
+                                    "freeformAddress",
+                                    candidate
+                                )
+                        }
+
+                # If no result was inside Hyderabad,
+                # skip to next candidate
+                print(
+                    f"[TomTom] '{candidate}' "
+                    f"not in Hyderabad bounds"
                 )
-
-                if not position:
-                    continue
-
-                return {
-                    "latitude":
-                        position["lat"],
-
-                    "longitude":
-                        position["lon"],
-
-                    "display_name":
-                        result.get(
-                            "address",
-                            {}
-                        ).get(
-                            "freeformAddress",
-                            candidate
-                        )
-                }
+                continue
 
             except requests.RequestException as e:
 

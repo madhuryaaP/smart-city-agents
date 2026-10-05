@@ -1418,6 +1418,9 @@ def response_node(
 
     try:
 
+        import time
+        time.sleep(2)
+
         response = generate_response(
             context,
             question,
