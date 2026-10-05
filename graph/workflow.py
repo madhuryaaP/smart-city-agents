@@ -571,11 +571,9 @@ def traffic_node(
         # ----------------------------------------------------
         # Normal traffic question
         #
-        # Example:
-        # "What is the traffic condition from LB Nagar
-        #  to Hitech City?"
-        #
-        # Let TrafficAgent extract the locations.
+        # Two sub-cases:
+        #   a) "from X to Y" → route traffic
+        #   b) "traffic in X" → area traffic (single location)
         # ----------------------------------------------------
 
         else:
@@ -588,12 +586,69 @@ def traffic_node(
                 question
             )
 
-            result = (
-                traffic_agent
-                .get_traffic(
-                    question
-                )
+            # Check if the question has "from X to Y"
+            has_from_to = re.search(
+                r"from\s+.+?\s+to\s+",
+                question,
+                re.IGNORECASE
             )
+
+            if has_from_to:
+
+                result = (
+                    traffic_agent
+                    .get_traffic(
+                        question
+                    )
+                )
+
+            else:
+
+                # Single-location query:
+                # "traffic in kothapet", "how is traffic at LB Nagar"
+                area_match = re.search(
+                    r"(?:traffic|congestion|road)\s+"
+                    r"(?:in|at|near|around|of|for)\s+"
+                    r"(.+?)(?:\?|$)",
+                    question,
+                    re.IGNORECASE
+                )
+
+                if not area_match:
+                    # Try "in/at X traffic"
+                    area_match = re.search(
+                        r"(?:in|at|near|around)\s+"
+                        r"(.+?)\s+(?:traffic|congestion|road)",
+                        question,
+                        re.IGNORECASE
+                    )
+
+                if area_match:
+
+                    area_name = area_match.group(1).strip(
+                        " .,?!"
+                    )
+
+                    print(
+                        "Area traffic query for:",
+                        area_name
+                    )
+
+                    result = (
+                        traffic_agent
+                        .get_area_traffic(
+                            area_name
+                        )
+                    )
+
+                else:
+
+                    result = (
+                        traffic_agent
+                        .get_traffic(
+                            question
+                        )
+                    )
 
         print(
             "\nTraffic Result:"
@@ -712,13 +767,43 @@ def water_node(
         ""
     )
 
+    source = state.get(
+        "source"
+    )
+
     if destination:
 
         weather_input = destination
 
+    elif source:
+
+        # Source is set but no destination — use source
+        weather_input = source
+
     else:
 
-        weather_input = question
+        # Try to extract destination from "from X to Y"
+        travel_match = re.search(
+            r"from\s+(.+?)\s+to\s+(.+?)"
+            r"(?:\s+(?:tell|and|show|give|what|how|is|are"
+            r"|the|traffic|weather|check|will|please|can"
+            r"|could|by|at|before|after)\b|\?|$)",
+            question,
+            re.IGNORECASE
+        )
+
+        if travel_match:
+
+            weather_input = travel_match.group(2).strip()
+
+            print(
+                "Extracted destination from question:",
+                weather_input
+            )
+
+        else:
+
+            weather_input = question
 
     print(
         "Sending to Water Agent:",
