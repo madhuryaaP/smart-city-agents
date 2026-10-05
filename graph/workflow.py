@@ -257,6 +257,36 @@ def router_node(
     pollution = "pollution" in domains
     infrastructure = "infrastructure" in domains
 
+    # --------------------------------------------------------
+    # Force planning mode when Flutter sends structured fields
+    # (source, destination, arrival_time) even if Groq did not
+    # classify the query as "planner".
+    # --------------------------------------------------------
+
+    has_structured_fields = (
+        (
+            state.get("source")
+            or extracted_source
+        )
+        and (
+            state.get("destination")
+            or extracted_dest
+        )
+        and (
+            state.get("arrival_time")
+            or extracted_time
+        )
+    )
+
+    if has_structured_fields and not planning:
+
+        print(
+            "Structured fields detected — "
+            "forcing planning mode."
+        )
+
+        planning = True
+
     selected_agents = []
 
     if planning:
@@ -392,6 +422,41 @@ def planner_parser_node(
         or not source
         or not arrival_time
     ):
+
+        # --------------------------------------------------------
+        # If source and destination are known, pass them through
+        # so traffic and weather agents can use them even
+        # without arrival_time.
+        # --------------------------------------------------------
+
+        if source and destination:
+
+            print(
+                "Missing arrival_time — "
+                "passing source and destination only."
+            )
+
+            return {
+
+                "source": source,
+
+                "destination": destination,
+
+                "planner": {
+
+                    "source": source,
+
+                    "destination": destination,
+
+                    "note": (
+                        "Arrival time not provided. "
+                        "Route and weather data will "
+                        "still be available."
+                    )
+
+                }
+
+            }
 
         error = {
 
@@ -586,69 +651,12 @@ def traffic_node(
                 question
             )
 
-            # Check if the question has "from X to Y"
-            has_from_to = re.search(
-                r"from\s+.+?\s+to\s+",
-                question,
-                re.IGNORECASE
+            result = (
+                traffic_agent
+                .get_traffic(
+                    question
+                )
             )
-
-            if has_from_to:
-
-                result = (
-                    traffic_agent
-                    .get_traffic(
-                        question
-                    )
-                )
-
-            else:
-
-                # Single-location query:
-                # "traffic in kothapet", "how is traffic at LB Nagar"
-                area_match = re.search(
-                    r"(?:traffic|congestion|road)\s+"
-                    r"(?:in|at|near|around|of|for)\s+"
-                    r"(.+?)(?:\?|$)",
-                    question,
-                    re.IGNORECASE
-                )
-
-                if not area_match:
-                    # Try "in/at X traffic"
-                    area_match = re.search(
-                        r"(?:in|at|near|around)\s+"
-                        r"(.+?)\s+(?:traffic|congestion|road)",
-                        question,
-                        re.IGNORECASE
-                    )
-
-                if area_match:
-
-                    area_name = area_match.group(1).strip(
-                        " .,?!"
-                    )
-
-                    print(
-                        "Area traffic query for:",
-                        area_name
-                    )
-
-                    result = (
-                        traffic_agent
-                        .get_area_traffic(
-                            area_name
-                        )
-                    )
-
-                else:
-
-                    result = (
-                        traffic_agent
-                        .get_traffic(
-                            question
-                        )
-                    )
 
         print(
             "\nTraffic Result:"
@@ -890,11 +898,7 @@ def planner_node(
         "arrival_time"
     )
 
-    if (
-        not source
-        or not destination
-        or not arrival_time
-    ):
+    if not source or not destination:
 
         return {}
 
@@ -1058,6 +1062,46 @@ def planner_node(
     # --------------------------------------------------------
     # Calculate departure
     # --------------------------------------------------------
+
+    if not arrival_time:
+
+        # No arrival_time — return route and weather
+        # info without departure calculation.
+
+        result = {
+
+            "destinations": destinations,
+
+            "weather": weather,
+
+            "traffic_delay_minutes": round(
+                traffic_delay
+            ),
+
+            "note": (
+                "No arrival time specified. "
+                "Showing route and weather info."
+            )
+
+        }
+
+        # Add total travel time from traffic data
+        total_travel = 0
+
+        for place in destinations:
+
+            total_travel += place.get(
+                "travel_time",
+                0
+            )
+
+        result["total_travel_minutes"] = (
+            total_travel
+        )
+
+        return {
+            "planner": result
+        }
 
     try:
 

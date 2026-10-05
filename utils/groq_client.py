@@ -134,6 +134,26 @@ Return:
     "domains": ["planner", "traffic", "water"]
 }
 
+Another:
+
+"Plan my day"
+or "Plan my trip"
+or "Plan my journey"
+
+Return:
+
+{
+    "domains": ["planner", "traffic", "water"]
+}
+
+IMPORTANT:
+Any query about planning, trip planning,
+day planning, scheduling a journey, or reaching
+somewhere MUST include "planner" in domains.
+Always add "traffic" and "water" alongside
+"planner" so the assistant can compute routes
+and check weather.
+
 Understand natural language even if sentence
 structure is different.
 
