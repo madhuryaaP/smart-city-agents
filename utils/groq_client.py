@@ -266,7 +266,7 @@ Format:
         # Retry with reliable non-reasoning model
         try:
             import time
-            time.sleep(2)
+            time.sleep(0.5)
 
             response2 = client.chat.completions.create(
                 model="openai/gpt-oss-20b",
@@ -730,7 +730,7 @@ Do not create information that is not present.
         # Retry with a reliable non-reasoning model
         try:
             import time
-            time.sleep(2)
+            time.sleep(0.5)
 
             response2 = client.chat.completions.create(
                 model="openai/gpt-oss-20b",

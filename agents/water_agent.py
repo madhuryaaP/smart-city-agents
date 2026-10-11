@@ -270,7 +270,16 @@ class WaterAgent:
                 "Adibatla",
 
             "barkatpura":
-                "Barkatpura"
+                "Barkatpura",
+
+            "ramanthapur":
+                "Ramanthapur",
+
+            "meerpet":
+                "Meerpet",
+
+            "karmanghat":
+                "Karmanghat"
 
         }
 

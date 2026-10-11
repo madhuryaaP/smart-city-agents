@@ -266,6 +266,11 @@ def extract_location(question):
         "Kondapur",
         "Uppal",
         "Manikonda",
+        "Kothapet",
+        "Ramanthapur",
+        "Meerpet",
+        "Karmanghat",
+        "Saidabad",
     ]
 
     for known_location in known_locations:
