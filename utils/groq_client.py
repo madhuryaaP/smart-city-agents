@@ -558,12 +558,12 @@ Narayanguda, Sultan Bazaar, MG Bus Station
 COMMON BUS ROUTES (TSRTC):
 
 LB Nagar area:
-• 65, 65A, 65K: LB Nagar → Koti/MGBS
-• 65G: LB Nagar → Secunderabad
-• 113: LB Nagar → Dilsukhnagar → Kothapet
-• 216: LB Nagar → Mehdipatnam
-• 290: LB Nagar → Miyapur
-• 300: LB Nagar → ECIL
+• 65, 65A, 65K: LB Nagar → Koti/MGBS (west)
+• 65G: LB Nagar → Secunderabad (north)
+• 113: LB Nagar → Dilsukhnagar → Kothapet (north)
+• 216: LB Nagar → Mehdipatnam → Gachibowli (west)
+• 290: LB Nagar → Miyapur (northwest)
+• 300: LB Nagar → ECIL (northeast)
 
 Kothapet area:
 • 113: Kothapet → Dilsukhnagar → LB Nagar
@@ -595,9 +595,12 @@ AUTO / CAB FARES (approximate):
 • Ola/Uber Sedan: ₹12-14/km
 
 Always suggest the CLOSEST metro station to
-source and destination. Mention 2-3 bus options
-when available. Include auto/cab fare estimates
-based on distance from traffic data.
+source and destination. Only suggest bus routes
+that actually travel TOWARDS the destination.
+Do NOT suggest a route just because it departs
+from the source area — it must be heading in
+the correct direction. Include auto/cab fare
+estimates based on distance from traffic data.
 
 Format the plan as a clear step-by-step
 itinerary that is easy to follow.
