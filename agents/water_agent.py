@@ -279,7 +279,13 @@ class WaterAgent:
                 "Meerpet",
 
             "karmanghat":
-                "Karmanghat"
+                "Karmanghat",
+
+            "almasguda":
+                "Almasguda",
+
+            "narayanaguda":
+                "Narayanaguda"
 
         }
 

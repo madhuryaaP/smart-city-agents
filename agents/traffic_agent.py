@@ -44,6 +44,8 @@ class TrafficAgent:
             "meerpet": (17.3200, 78.5270, "Meerpet, Hyderabad"),
             "karmanghat": (17.3350, 78.5350, "Karmanghat, Hyderabad"),
             "saidabad": (17.3560, 78.5050, "Saidabad, Hyderabad"),
+            "almasguda": (17.3100, 78.5500, "Almasguda, Hyderabad"),
+            "narayanaguda": (17.3950, 78.4850, "Narayanaguda, Hyderabad"),
 
             # ---- WEST HYDERABAD ----
             "hitech city": (17.4435, 78.3772, "HITEC City, Hyderabad"),

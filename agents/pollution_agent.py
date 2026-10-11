@@ -271,6 +271,8 @@ def extract_location(question):
         "Meerpet",
         "Karmanghat",
         "Saidabad",
+        "Almasguda",
+        "Narayanaguda",
     ]
 
     for known_location in known_locations:
